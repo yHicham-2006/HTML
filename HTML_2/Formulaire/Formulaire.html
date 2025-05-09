@@ -1,0 +1,25 @@
+<! DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset = "UTF -8"/>
+        <form action="/ma-page-de-traitement" method="post">
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom"/>
+            </div>
+            <br>
+            <div>
+                <label for="courriel">Courriel:</label>
+                <input type="email" id="courriel" />
+            </div>
+            <br>
+            <div>
+                <label for="motdepasse">Mot de passe:</label>
+                <input type="password" id="motdepasse" name="motdepasse"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{4,8}$" 
+                title="Le mot de passe doit contenir entre 4 et 8 caractères, une lettre minuscule, une lettre majuscule, un chiffre et un caractère spécial." required />
+            </div>
+            <br>
+            <button type="submit">Envoyer</button>
+    </head>
+</html>
